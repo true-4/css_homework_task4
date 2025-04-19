@@ -1,0 +1,101 @@
+@import './color-variables.css';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.container {
+  padding: 8px 8px 0;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0 0 0 / 0.3);
+  padding: 18px 0;
+}
+
+.header-block {
+  padding-bottom: 16px;
+}
+
+.custom-color {
+  color: var(--red);
+  padding-bottom: 16px;
+}
+
+.custom-background-color {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 5px 0 5px 5px;
+}
+
+.text-is-italic {
+  font-style: italic;
+  padding-bottom: 16px;
+}
+
+.text-is-uppercase {
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0 0 0 / 0.5);
+}
+
+.bottom-block {
+  padding: 20px 0;
+}
+
+.shadow-box {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--bg-grey);
+  max-width: 190px;
+  box-shadow: 5px 5px 10px rgba(0 0 0 / 0.3);
+}
+
+.first-lit::first-letter {
+  text-transform: capitalize;
+  color: var(--purple);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.input-user {
+  padding: 16px 0;
+}
+
+.user-name {
+  color: var(--input-text);
+  font-style: italic;
+}
+
+.user-name:focus {
+  background-color: var(--bg-grey);
+  color: var(--input-text);
+  font-style: italic;
+}
+
+.highlight-start-and-end::before {
+  color: var(--orange);
+  content: 'Before:';
+}
+
+.highlight-start-and-end::after {
+  color: var(--orange);
+  content: ':After';
+}
