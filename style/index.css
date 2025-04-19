@@ -68,7 +68,7 @@ html {
   box-shadow: 5px 5px 10px rgba(0 0 0 / 0.3);
 }
 
-.first-litter::first-letter {
+.first-lit::first-letter {
   text-transform: capitalize;
   color: var(--purple);
   font-size: 36px;
